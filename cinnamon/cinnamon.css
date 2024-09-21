@@ -139,13 +139,15 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 .menu {
-    background-color: rgba(246, 246, 246, 0.90);
     border-width: 1px;
     border-color: rgba(40, 40, 40, 0.3);
     color: rgb(70, 70, 70);
     min-width: 100px;
     border-radius: 10px 10px 10px 10px;
-    margin-left: 5px;
+    margin-left: 5px;    
+    background-gradient-direction: radial;
+    background-gradient-start: rgba(246, 246, 246, 0.8);
+    background-gradient-end: rgba(226, 226, 226, 0.9);
 }
 
 .menu.top {
