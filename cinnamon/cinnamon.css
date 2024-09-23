@@ -1772,11 +1772,10 @@ StScrollBar StButton#vhandle:hover {
 .grouped-window-list-item-box {
     text-align: left;
     font-weight: bold;
-    color: rgb(62, 62, 62);
-    padding-top: 1px;
-    padding-left: 4px;
-    padding-right: 4px;
-    border-image: none;
+    color: rgba(62, 62, 62, 1);
+    transition-duration: 2000;
+    margin-bottom: 2px;
+    padding: 5px 0px 0px 5px;
 }
 
 .panel-top .grouped-window-list-item-box {
@@ -1795,12 +1794,17 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("panel-assets/hover-3-right.svg") 6;
 }
 
-.grouped-window-list-item-box:active,
-.grouped-window-list-item-box:active:hover,
-.grouped-window-list-item-box:checked,
+.grouped-window-list-item-box:hover,
 .grouped-window-list-item-box:checked:hover,
-.grouped-window-list-item-box:hover {
-    border-image: url("panel-assets/hover-1.svg") 6;
+.grouped-window-list-item-box:active:hover{
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 2px;
+    transition-duration: 200;
+}
+.grouped-window-list-item-box:active,
+.grouped-window-list-item-box:checked{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .panel-top .grouped-window-list-item-box:hover {
@@ -1815,12 +1819,15 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("panel-assets/hover-1-right.svg") 6;
 }
 
-.grouped-window-list-item-box:focus,
-.grouped-window-list-item-box:focus:hover,
-.grouped-window-list-item-box:focus:active:hover {
+.grouped-window-list-item-box:focus {
     font-weight: bold;
     color: #fff;
-    border-image: url("panel-assets/pressed.svg") 6;
+}
+.grouped-window-list-item-box:focus:hover,
+.grouped-window-list-item-box:focus:active:hover{
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 2px;
+    transition-duration: 200;
 }
 
 .panel-top .grouped-window-list-item-box:focus,
