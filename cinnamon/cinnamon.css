@@ -386,7 +386,6 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(246, 246, 246, 0.8);
     background-gradient-end: rgba(206, 206, 206, 0.8);
-    box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -396,7 +395,6 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-direction: horizontal;
     background-gradient-start: rgba(246, 246, 246, 0.8);
     background-gradient-end: rgba(206, 206, 206, 0.8);
-    box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
     margin-top: 5px;
     margin-bottom: 5px;
 }
