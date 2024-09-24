@@ -314,9 +314,6 @@ StScrollBar StButton#vhandle:hover {
     width: 32px;
     padding: 0px;
     border-radius: 10px 10px 10px 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
 }
 
 #panel:highlight {
@@ -390,6 +387,8 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-start: rgba(246, 246, 246, 0.8);
     background-gradient-end: rgba(206, 206, 206, 0.8);
     box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .panel-left,
@@ -398,6 +397,8 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-start: rgba(246, 246, 246, 0.8);
     background-gradient-end: rgba(206, 206, 206, 0.8);
     box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .system-status-icon {
@@ -1770,82 +1771,61 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-item-box {
-    text-align: left;
-    font-weight: bold;
-    color: rgba(62, 62, 62, 1);
-    transition-duration: 2000;
-    margin-bottom: 2px;
-    padding: 5px 0px 0px 5px;
-}
-
-.panel-top .grouped-window-list-item-box {
-    border-image: url("panel-assets/hover-3-top.svg") 6;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    padding-top: 5px;
+    transition-duration: 0.5s;
 }
 
 .panel-left .grouped-window-list-item-box {
-    padding-left: 0px;
-    padding-right: 0px;
-    border-image: url("panel-assets/hover-3-left.svg") 6;
+    padding-top: 0px;
+    padding-right: 5px;
+}
+
+.panel-top .grouped-window-list-item-box {
+    padding-top: 0px;
+    padding-bottom: 5px;
 }
 
 .panel-right .grouped-window-list-item-box {
-    padding-left: 0px;
-    padding-right: 0px;
-    border-image: url("panel-assets/hover-3-right.svg") 6;
+    padding-top: 0px;
+    padding-left: 5px;
 }
 
 .grouped-window-list-item-box:hover,
 .grouped-window-list-item-box:checked:hover,
-.grouped-window-list-item-box:active:hover{
-    padding: 0px 0px 0px 0px;
-    margin-bottom: 2px;
-    transition-duration: 200;
-}
-.grouped-window-list-item-box:active,
-.grouped-window-list-item-box:checked{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.panel-top .grouped-window-list-item-box:hover {
-    border-image: url("panel-assets/hover-1-top.svg") 6;
-}
-
-.panel-left .grouped-window-list-item-box:hover {
-    border-image: url("panel-assets/hover-1-left.svg") 6;
-}
-
-.panel-right .grouped-window-list-item-box:hover {
-    border-image: url("panel-assets/hover-1-right.svg") 6;
-}
-
-.grouped-window-list-item-box:focus {
-    font-weight: bold;
-    color: #fff;
-}
+.grouped-window-list-item-box:active:hover,
 .grouped-window-list-item-box:focus:hover,
 .grouped-window-list-item-box:focus:active:hover{
-    padding: 0px 0px 0px 0px;
-    margin-bottom: 2px;
-    transition-duration: 200;
+    padding-top: 0px;
 }
 
-.panel-top .grouped-window-list-item-box:focus,
-.panel-top .grouped-window-list-item-box:focus:hover,
-.panel-top .grouped-window-list-item-box:focus:active:hover {
-    border-image: url("panel-assets/pressed-top.svg") 6;
-}
-
-.panel-left .grouped-window-list-item-box:focus,
+.panel-left .grouped-window-list-item-box:hover,
+.panel-left .grouped-window-list-item-box:checked:hover,
+.panel-left .grouped-window-list-item-box:active:hover,
 .panel-left .grouped-window-list-item-box:focus:hover,
-.panel-left .grouped-window-list-item-box:focus:active:hover {
-    border-image: url("panel-assets/pressed-left.svg") 6;
+.panel-left .grouped-window-list-item-box:focus:active:hover{
+    padding-right: 0px;
 }
 
-.panel-right .grouped-window-list-item-box:focus,
+.panel-top .grouped-window-list-item-box:hover,
+.panel-top .grouped-window-list-item-box:checked:hover,
+.panel-top .grouped-window-list-item-box:active:hover,
+.panel-top .grouped-window-list-item-box:focus:hover,
+.panel-top .grouped-window-list-item-box:focus:active:hover{
+    padding-bottom: 0px;
+}
+
+.panel-right .grouped-window-list-item-box:hover,
+.panel-right .grouped-window-list-item-box:checked:hover,
+.panel-right .grouped-window-list-item-box:active:hover,
 .panel-right .grouped-window-list-item-box:focus:hover,
-.panel-right .grouped-window-list-item-box:focus:active:hover {
-    border-image: url("panel-assets/pressed-right.svg") 6;
+.panel-right .grouped-window-list-item-box:focus:active:hover{
+    padding-left: 0px;
+}
+
+.grouped-window-list-item-box:focus{
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .grouped-window-list-item-demands-attention {
@@ -1865,19 +1845,8 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-item-box .progress {
-    border-image: url("panel-assets/progress.svg") 6;
-}
-
-.panel-top .grouped-window-list-item-box .progress {
-    border-image: url("panel-assets/progress-top.svg") 6;
-}
-
-.panel-left .grouped-window-list-item-box .progress {
-    border-image: url("panel-assets/progress-left.svg") 6;
-}
-
-.panel-right .grouped-window-list-item-box .progress {
-    border-image: url("panel-assets/progress-right.svg") 6;
+    background-color: rgba(43, 158, 21, 0.5);
+    border-radius: 3px;
 }
 
 .grouped-window-list-thumbnail-menu {
@@ -2149,21 +2118,6 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-direction: radial;
     background-gradient-start: rgba(246, 246, 246, 0.7);
     background-gradient-end: rgba(206, 206, 206, 0.6);
-}
-
-.panel-top .applet-box:checked,
-.panel-top .applet-box:hover {
-    border-image: url("panel-assets/hover-1-top.svg") 6;
-}
-
-.panel-left .applet-box:checked,
-.panel-left .applet-box:hover {
-    border-image: url("panel-assets/hover-1-left.svg") 6;
-}
-
-.panel-right .applet-box:checked,
-.panel-right .applet-box:hover {
-    border-image: url("panel-assets/hover-1-right.svg") 6;
 }
 
 .applet-box:highlight {
