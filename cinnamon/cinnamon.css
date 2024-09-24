@@ -2129,11 +2129,13 @@ StScrollBar StButton#vhandle:hover {
 .applet-box {
     font-weight: bold;
     color: rgb(74, 74, 74);
+    margin-left: 2px;
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 1px;
     spacing: 3px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .applet-box.vertical {
@@ -2144,7 +2146,9 @@ StScrollBar StButton#vhandle:hover {
 
 .applet-box:checked,
 .applet-box:hover {
-    border-image: url("panel-assets/hover-1.svg") 6;
+    background-gradient-direction: radial;
+    background-gradient-start: rgba(246, 246, 246, 0.7);
+    background-gradient-end: rgba(206, 206, 206, 0.6);
 }
 
 .panel-top .applet-box:checked,

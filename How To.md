@@ -5,5 +5,4 @@
 # Panel
 - Panel: #Panel
 - Open window icons: .grouped-window-list-item-box
-- Menu icon:
-- Tray icons:
+- Menu icon & Tray icons: .applet-box
