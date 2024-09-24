@@ -139,7 +139,7 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 .menu {
-    border-width: 1px;
+    border-width: 0px;
     border-color: rgba(40, 40, 40, 0.3);
     color: rgb(70, 70, 70);
     min-width: 100px;
@@ -160,10 +160,14 @@ StScrollBar StButton#vhandle:hover {
 
 .menu.left {
     border-radius: 0 4px 4px 0;
+    margin-left: 0px;    
+    margin-top: 5px;    
 }
 
 .menu.right {
     border-radius: 4px 0 0 4px;
+    margin-left: 0px;    
+    margin-top: 5px;    
 }
 
 .menu StEntry {
@@ -1478,16 +1482,19 @@ StScrollBar StButton#vhandle:hover {
 
 /* Main menu title */
 
-.menu-favorites-box {
-    background-color: rgb(236, 236, 236);
-    border: 1px solid rgb(192, 192, 192);
-    border-radius: 4px;
-    padding: 0.5em;
+.menu-favorites-box { 
+    padding: 0px; 
+    spacing: 20px; 
+    border-radius: 0; 
+    border: 0 solid rgba(0, 0, 0, 0.13); 
+    background-color: transparent; 
+    border-right-width: 1px; 
+    margin-left: 0px;
 }
 
 .menu-favorites-button {
     padding: .9em 1em;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .menu-favorites-button:hover {
