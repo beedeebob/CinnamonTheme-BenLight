@@ -536,14 +536,18 @@ StScrollBar StButton#vhandle:hover {
 .applet-cornerbar {
   width: 8px;
   background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .applet-cornerbar-box {
-  padding: 4px 4px 4px 4px;
+  padding: 0px 0px 0px 0px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 4px 4px 4px 4px;
 }
 
 .applet-cornerbar-box:hover {
-  background-color: #c0c0c0;
+  background-color: rgba(59, 127, 171, 0.5);
 }
 
 .applet-cornerbar.vertical {
