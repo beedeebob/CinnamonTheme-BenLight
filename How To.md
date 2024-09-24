@@ -4,6 +4,6 @@
 
 # Panel
 - Panel: #Panel
-- Open window icons:
+- Open window icons: .grouped-window-list-item-box
 - Menu icon:
 - Tray icons:
