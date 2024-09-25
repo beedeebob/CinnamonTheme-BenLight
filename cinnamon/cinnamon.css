@@ -2097,11 +2097,11 @@ StScrollBar StButton#vhandle:hover {
  * Applets (applet.js)
  * ===================================================================*/
 .applet-separator {
-    border-image: url("panel-assets/separator.png") 4 5 0 2 stretch;
-    padding: 5px 4px;
+    background-color: transparent;
 }
 
 .applet-separator-line {
+    background-color: transparent;
 }
 
 .applet-box {
