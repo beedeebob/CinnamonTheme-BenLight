@@ -146,8 +146,8 @@ StScrollBar StButton#vhandle:hover {
     border-radius: 10px 10px 10px 10px;
     margin-left: 5px;    
     background-gradient-direction: radial;
-    background-gradient-start: rgba(246, 246, 246, 0.8);
-    background-gradient-end: rgba(226, 226, 226, 0.9);
+    background-gradient-start: rgba(246, 246, 246, 0.95);
+    background-gradient-end: rgba(226, 226, 226, 0.95);
 }
 
 .menu.top {
@@ -1484,27 +1484,33 @@ StScrollBar StButton#vhandle:hover {
 
 .menu-favorites-box { 
     padding: 0px; 
-    spacing: 20px; 
+    padding-right: 10px;
     border-radius: 0; 
     border: 0 solid rgba(0, 0, 0, 0.13); 
     background-color: transparent; 
     border-right-width: 1px; 
     margin-left: 0px;
+    margin-top: 10px;
 }
 
 .menu-favorites-button {
-    padding: .9em 1em;
-    border-radius: 5px;
+    padding: 7px; 
+    margin: 0px;
+/*    padding: .9em 1em;
+    border-radius: 5px;*/
 }
 
 .menu-favorites-button:hover {
-    border-image: url("misc-assets/hover-2.png") 6;
+    border-radius: 8px;
+    background-gradient-direction: radial;
+    background-gradient-start: rgba(59, 127, 171, 0.5);
+    background-gradient-end: rgba(59, 127, 171, 0.2);
 }
 
 .menu-categories-box {
     padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
 }
 
@@ -1520,10 +1526,10 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .menu-application-button {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
     max-width: 10px;
 }
 
@@ -1534,12 +1540,14 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .menu-application-button-selected {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
-    color: #fff;
-    border-image: url("misc-assets/hover-2.png") 6;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    border-radius: 8px;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(59, 127, 171, 0.15);
+    background-gradient-end: rgba(39, 107, 151, 0.15);
 }
 
 .menu-application-button-selected:highlighted {
@@ -1557,28 +1565,30 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .menu-category-button {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
 }
 
 .menu-category-button-greyed {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
     color: rgba(100, 100, 100, 1);
     font-style: italic;
 }
 
 .menu-category-button-selected {
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-bottom: 7px;
-    color: #fff;
-    border-image: url("misc-assets/hover-2.png") 6;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    border-radius: 8px;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(59, 127, 171, 0.15);
+    background-gradient-end: rgba(39, 107, 151, 0.15);
 }
 
 .menu-category-button-label:ltr {
@@ -1607,6 +1617,7 @@ StScrollBar StButton#vhandle:hover {
 
 .menu-search-box {
     padding-left: 30px;
+    color: transparent;
 }
 
 .menu-search-entry-icon {
