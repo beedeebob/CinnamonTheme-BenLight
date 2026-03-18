@@ -7,3 +7,5 @@
 - Open window icons: .grouped-window-list-item-box
 - Menu icon & Tray icons: .applet-box
 - Cornerbar button: .applet-cornerbar
+
+# Menu
