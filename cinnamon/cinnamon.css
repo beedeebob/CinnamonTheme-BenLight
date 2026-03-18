@@ -123,7 +123,7 @@ StScrollBar StButton#vhandle:hover {
 
 .notification-button:focus:hover,
 .notification-icon-button:focus:hover,
-.modal-dialog-button:focus:hover {
+.dialog-button:focus:hover {
     border-image: url("button-assets/button-focus-hover.png") 4;
 }
 
@@ -1126,51 +1126,51 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Modal dialogs (modalDialog.js)
+ * dialogs (Dialog.js)
  * ===================================================================*/
-.modal-dialog {
+.dialog {
     border-image: url("background-assets/bg-1.png") 6;
     color: rgb(70, 70, 70);
     padding: 20px;
 }
 
-.modal-dialog-button-box {
+.dialog-button-box {
     spacing: 110px;
     padding-top: 20px;
 }
 
-.modal-dialog-button {
+.dialog-button {
     height: 22px;
     color: rgb(70, 70, 70);
     border-image: url("button-assets/button.png") 4;
     padding: 3px 31px 4px;
 }
 
-.modal-dialog-button:hover {
+.dialog-button:hover {
     border-image: url("button-assets/button-hover.png") 4;
 }
 
-.modal-dialog-button:focus {
+.dialog-button:focus {
     border-image: url("button-assets/button-focus.png") 4;
     padding: 3px 31px 4px;
 }
 
-.modal-dialog-button:active,
-.modal-dialog-button:checked {
+.dialog-button:active,
+.dialog-button:checked {
     border-image: url("button-assets/button-pressed.png") 4;
 }
 
-.modal-dialog-button:focus:hover {
+.dialog-button:focus:hover {
     border-image: url("button-assets/button-focus-hover.png") 4;
     padding: 3px 31px 4px;
 }
 
-.modal-dialog-button:focus:checked,
-.modal-dialog-button:focus:active {
+.dialog-button:focus:checked,
+.dialog-button:focus:active {
     border-image: url("button-assets/button-pressed.png") 4;
 }
 
-.modal-dialog-button:disabled {
+.dialog-button:disabled {
     color: #a6a6a6;
 }
 
@@ -1330,7 +1330,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * On screen keyboard (keyboard.js)
+ * On screen keyboard (keyboard.js) ********** DEPRECATED 6.6
  * ===================================================================*/
 #keyboard {
     border-image: url("background-assets/keyboard-bg.png") 4;
@@ -1381,54 +1381,198 @@ StScrollBar StButton#vhandle:hover {
     -boxpointer-gap: 2px;
 }
 
+/* ======================================
+ * On-Screen Keyboard (>= Cinnamon 6.6)
+ * ======================================*/
+/*
+On-Screen Keyboard (>= Cinnamon 6.6)
+*/
+#virtual-keyboard {
+  border-image: url("background-assets/keyboard-bg.png") 4;
+}
+
+.vkeyboard-key-container {
+  padding: 3px;
+  spacing: 3px; }
+
+.vkeyboard-key {
+    border-image: url("button-assets/button.png") 4;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 4px 4px 4px;
+    color: rgb(70, 70, 70);
+}
+
+.vkeyboard-key StIcon {
+    icon-size: 1.125em;
+}
+
+.vkeyboard-key:checked,
+.vkeyboard-key:hover {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+
+.vkeyboard-key:active,
+.vkeyboard-key.modifier-key:latched,
+.vkeyboard-key.modifier-key:latched:hover,
+.vkeyboard-key.shift-key-uppercase {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.vkeyboard-key.shift-key-lowercase,
+.vkeyboard-key.escape-key,
+.vkeyboard-key.hide-key,
+.vkeyboard-key.enter-key,
+.vkeyboard-key.modifier-key,
+.vkeyboard-key.non-alpha-key {
+    border-image: url("button-assets/button-darker.png") 4;
+}
+
+.vkeyboard-key.enter-key:hover,
+.vkeyboard-key.enter-key:checked,
+.vkeyboard-key.shift-key-lowercase:hover,
+.vkeyboard-key.shift-key-lowercase:checked,
+.vkeyboard-key.escape-key:hover,
+.vkeyboard-key.escape-key:checked,
+.vkeyboard-key.hide-key:hover,
+.vkeyboard-key.hide-key:checked,
+.vkeyboard-key.modifier-key:hover,
+.vkeyboard-key.modifier-key:checked,
+.vkeyboard-key.non-alpha-key:hover,
+.vkeyboard-key.non-alpha-key:checked {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+
+.vkeyboard-key.enter-key:active,
+.vkeyboard-key.shift-key-lowercase:active,
+.vkeyboard-key.escape-key:active,
+.vkeyboard-key.hide-key:active,
+.vkeyboard-key.modifier-key:active,
+.vkeyboard-key.non-alpha-key:active {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.vkeyboard-subkeys {
+    color: rgb(70, 70, 70);
+    padding: 7px;
+    -arrow-border-radius: 4px;
+    -arrow-background-color: rgb(225, 225, 225);
+    -arrow-border-width: 1px;
+    -arrow-border-color: rgba(40, 40, 40, 0.4);
+    -arrow-base: 18px;
+    -arrow-rise: 10px;
+    -st-shadow: 0px -1px 2px 0px rgba(255, 255, 255, 0.9);
+    -boxpointer-gap: 2px;
+}
+
+.word-suggestions {
+  font-size: 1.227em;
+  spacing: 20px;
+  min-height: 20pt; }
+
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 4px;
+  -arrow-background-color: #ebebed;
+  -arrow-border-color: rgba(40, 40, 40, 0.4);
+  -arrow-border-width: 1px;
+  -arrow-base: 12px;
+  -arrow-rise: 4px;
+  -arrow-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.candidate-popup-content {
+  border-image: url("background-assets/bg-1.png") 4;
+  padding: 0.5em;
+  spacing: 0.6em; }
+
+.candidate-index {
+  padding: 0 0.5em 0 0;
+  color: #171717; }
+
+.candidate-box {
+    padding: 4px;
+
+    border-radius: 4px;
+    color: black;
+}
+.candidate-box:selected, .candidate-box:hover {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+
+.candidate-page-button-box {
+  height: 2em;
+  spacing: .6em;
+}
+
+.vertical .candidate-page-button-box {
+    padding-top: 0.5em;
+}
+
+.horizontal .candidate-page-button-box {
+    padding-left: 0.5em;
+}
+
+.candidate-page-button {
+  border-image: url("button-assets/button-hover.png") 4;
+  padding: 4px 8px;
+}
+
+.candidate-page-button-previous {
+  border-radius: 6px 0px 0px 6px;
+  border-right-width: 0; }
+
+.candidate-page-button-next {
+  border-radius: 0px 6px 6px 0px; }
+
+.candidate-page-button-icon {
+  icon-size: 1em; }
+
 /* ===================================================================
  * Policykit authentication dialog
  * ===================================================================*/
 
-.polkit-dialog {
+.prompt-dialog {
     /* this is the width of the entire modal popup */
-    width: 500px;
-}
-
-.polkit-dialog-main-layout {
-    spacing: 10px;
-}
-
-.polkit-dialog-headline {
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: bold;
-    color: rgb(70, 70, 70);
-}
-
-.polkit-dialog-description {
-    text-align: center;
-    font-size: 1em;
-    color: rgb(70, 70, 70);
+    width: 400px;
 }
 
 .polkit-dialog-user-layout {
     spacing: 10px;
 }
 
-.polkit-dialog-user-layout:rtl {
-    padding-right: 10px;
+.polkit-dialog-user-combo {
+    border-image: url("button-assets/button.png") 4;
+    padding: 0.5em 2em;
+    color: rgb(70, 70, 70);
 }
 
-.polkit-dialog-user-root-label {
-    color: #ff0000;
+.polkit-dialog-user-combo:hover {
+    border-image: url("button-assets/button-hover.png") 4;
 }
 
-.polkit-dialog-password-label:ltr {
-    padding-top: 0.5em;
-    padding-right: 0.5em;
+.polkit-dialog-user-combo:focus {
+    border-image: url("button-assets/button-focus.png") 4;
 }
 
-.polkit-dialog-password-label:rtl {
-    padding-left: 0.5em;
+.polkit-dialog-user-combo:active,
+.polkit-dialog-user-combo:checked {
+    border-image: url("button-assets/button-pressed.png") 4;
 }
 
-.polkit-dialog-password-entry {
+.polkit-dialog-user-combo:focus:hover {
+    border-image: url("button-assets/button-focus-hover.png") 4;
+}
+
+.polkit-dialog-user-combo:focus:checked,
+.polkit-dialog-user-combo:active {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.polkit-dialog-user-combo:disabled,
+.polkit-dialog-user-combo:insensitive {
+    color: #a6a6a6;
+}
+
+.prompt-dialog-password-entry {
     padding: 4px 12px;
     color: #2b2b2b;
     border-image: url("misc-assets/entry.png") 6;
@@ -1436,19 +1580,17 @@ StScrollBar StButton#vhandle:hover {
     caret-color: #2b2b2b;
     caret-size: 1px;
     width: 250px;
-    height: 16px;
     transition-duration: 300;
     selected-color: #fff;
     selection-background-color: #5aaa9a;
 }
 
-.polkit-dialog-password-entry:focus {
+.prompt-dialog-password-entry:focus {
     padding: 4px 12px;
     color: #2b2b2b;
     border-image: url("misc-assets/entry-focus.png") 6;
     border-radius: 4px;
     width: 250px;
-    height: 16px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
@@ -1456,20 +1598,89 @@ StScrollBar StButton#vhandle:hover {
     transition-duration: 150;
 }
 
-.polkit-dialog-password-entry .capslock-warning {
+.prompt-dialog-password-entry .capslock-warning {
     icon-size: 16px;
     warning-color: rgb(64, 64, 64);
     padding: 0 4px;
 }
 
-.polkit-dialog-error-label {
+.prompt-dialog-error-label {
     text-align: center;
     font-size: 1em;
     color: #ff0000;
 }
 
-.polkit-dialog-info-label {
+.prompt-dialog-info-label {
     font-size: 1em;
+}
+
+.prompt-dialog-password-entry StLabel.hint-text {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.prompt-dialog-password-entry StIcon.peek-password {
+    icon-size: 16px;
+    color: rgb(70, 70, 70);
+}
+
+/* ===================================================================
+ * Run dialog
+ * ===================================================================*/
+
+.run-dialog-description {
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+ 
+.run-dialog-entry {
+    padding: 4px 12px;
+    color: #2b2b2b;
+    border-image: url("misc-assets/entry.png") 6;
+    border-radius: 4px;
+    width: 250px;
+    min-height: 16px;
+    selected-color: #fff;
+    caret-color: #2b2b2b;
+    caret-size: 1px;
+    selection-background-color: #5aaa9a;
+    transition-duration: 150;
+}
+
+.run-dialog-entry:focus {
+    padding: 4px 12px;
+    color: #2b2b2b;
+    border-image: url("misc-assets/entry-focus.png") 6;
+    border-radius: 4px;
+    width: 250px;
+    min-height: 16px;
+    selected-color: #fff;
+    caret-color: #2b2b2b;
+    caret-size: 1px;
+    selection-background-color: #5aaa9a;
+    transition-duration: 150;
+}
+
+/* ###################################################################
+ * Audio device selection dialog
+ * ###################################################################*/
+
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device {
+    border-image: url("button-assets/button.png") 4;
+    color: rgb(70, 70, 70);
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus {
+    border-image: url("button-assets/button-focus.png") 4;
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive {
+    color: #a6a6a6
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected,
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:active,
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked {
+    border-image: url("button-assets/button-pressed.png") 4;
 }
 
 /* ###################################################################
@@ -1626,6 +1837,186 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .menu-context-menu {
+}
+/* ===================================================================
+ *  New Menu applet (menu@cinnamon.org/applet.js)
+ *  Since Cinnamon 6.6
+ * ===================================================================*/
+
+.appmenu-background .popup-menu-content {
+  padding: 0;
+}
+
+.appmenu-main-box {
+  spacing: 10px;
+}
+
+.appmenu-right-box {
+  spacing: 5px;
+  padding: 10px 10px;
+}
+
+.appmenu-search-box {
+    spacing: 10px;
+}
+
+.appmenu-categories-applications-box {
+  spacing: 15px;
+  padding: 10px 10px;
+}
+
+.appmenu-categories-applications-box:top {
+  /* Extra padding at the top of the categories/apps
+   when the search box is at the bottom */
+  padding-top: 5px;
+}
+
+.appmenu-applications-box {
+  /* Extra gap between the highlighted app and the scroll handle */
+  padding-right: 5px;
+}
+
+.appmenu-system-box {
+  spacing: 10px;
+}
+
+.appmenu-sidebar {
+    padding: 10px 0px;
+    spacing: 5px;
+    background-color: #dadada;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 10px 0 0 10px;
+    border-right-width: 1px;
+}
+
+.appmenu-sidebar .appmenu-system-button-lock:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.appmenu-sidebar .appmenu-system-button-logout:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.appmenu-application-button-label:ltr {
+    padding-left: 5px;
+}
+
+.appmenu-application-button-label:rtl {
+    padding-right: 5px;
+}
+
+.appmenu-application-button-description {
+    font-size: 0.9em;
+    color: rgb(110, 110, 110);
+}
+
+.appmenu-application-button-description:ltr {
+    padding-left: 5px;
+}
+
+.appmenu-application-button-description:rtl {
+    padding-right: 5px;
+}
+
+.appmenu-sidebar-button {
+    padding: 4px 1em;
+}
+
+.appmenu-sidebar-button:hover {
+    background-color: #c0c0c0;
+    border-radius: 4px;
+}
+
+.appmenu-system-button {
+  padding: 8px;
+  border-radius: 9999px;
+}
+
+.appmenu-system-button-lock:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.appmenu-system-button-logout:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.appmenu-system-button-shutdown:hover {
+  background-color: #c21616;
+  color: white;
+}
+
+.appmenu-application-button {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    max-width: 10px;
+}
+
+.appmenu-application-button:highlighted {
+    /* This style is used in menu application buttons for applications which were newly installed */
+    font-weight: bold;
+}
+
+.appmenu-application-button-selected {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    border-radius: 4px;
+    max-width: 10px;
+    background-color: #dadada;
+}
+
+.appmenu-application-button-selected:highlighted {
+    /* This style is used in menu application buttons for applications which were newly installed */
+    font-weight: bold;
+}
+
+.appmenu-category-button {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+}
+
+.appmenu-category-button-greyed {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    color: rgba(100, 100, 100, 1);
+    font-style: italic;
+}
+
+.appmenu-category-button-selected {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    background-color: #dadada;
+    border-radius: 4px;
+}
+
+.appmenu-category-button-label:ltr {
+    padding-left: 5px;
+}
+
+.appmenu-category-button-label:rtl {
+    padding-right: 5px;
+}
+
+.appmenu-search-entry-icon {
+    icon-size: 1em;
+    color: #2b2b2b;
+}
+
+#appmenu-search-entry StLabel.hint-text {
+    color: rgba(70, 70, 70, 0.3);
 }
 
 /* ===================================================================
