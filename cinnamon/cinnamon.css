@@ -144,10 +144,12 @@ StScrollBar StButton#vhandle:hover {
     color: rgb(70, 70, 70);
     min-width: 100px;
     border-radius: 10px 10px 10px 10px;
-    margin-left: 5px;    
+    margin-left: 5px;
+    background: url("background-assets/noise-texture.png");
+    background-repeat: repeat;
     background-gradient-direction: radial;
-    background-gradient-start: rgba(246, 246, 246, 0.95);
-    background-gradient-end: rgba(226, 226, 226, 0.95);
+    background-gradient-start: rgba(255, 255, 255, 0.95);
+    background-gradient-end: rgba(237, 237, 237, 0.95);
 }
 
 .menu.top {
@@ -174,9 +176,9 @@ StScrollBar StButton#vhandle:hover {
     padding: 4px 12px;
     color: #2b2b2b;
     border-image: url("misc-assets/entry.png") 6;
-    border-radius: 4px;
+    border-radius: 8px;
     width: 250px;
-    min-height: 16px;
+    min-height: 20px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
@@ -188,9 +190,9 @@ StScrollBar StButton#vhandle:hover {
     padding: 4px 12px;
     color: #2b2b2b;
     border-image: url("misc-assets/entry-focus.png") 6;
-    border-radius: 4px;
+    border-radius: 8px;
     width: 250px;
-    min-height: 16px;
+    min-height: 20px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
@@ -388,8 +390,8 @@ StScrollBar StButton#vhandle:hover {
 .panel-top,
 .panel-bottom {
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(246, 246, 246, 0.8);
-    background-gradient-end: rgba(206, 206, 206, 0.8);
+    background-gradient-start: rgba(255, 255, 255, 0.8);
+    background-gradient-end: rgba(237, 237, 237, 0.8);
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -397,8 +399,8 @@ StScrollBar StButton#vhandle:hover {
 .panel-left,
 .panel-right {
     background-gradient-direction: horizontal;
-    background-gradient-start: rgba(246, 246, 246, 0.8);
-    background-gradient-end: rgba(206, 206, 206, 0.8);
+    background-gradient-start: rgba(255, 255, 255, 0.8);
+    background-gradient-end: rgba(237, 237, 237, 0.8);
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -2550,12 +2552,15 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 
 .applet-icon {
     icon-size: 22px;
+    color: #7cb342;
+    transition-duration: 150;
 }
 
 .applet-icon:hover,
 .applet-icon:checked,
 .applet-box:checked > .applet-icon,
 .applet-box:hover > .applet-icon {
+    color: #9ccc65;
 }
 
 /* ===================================================================
