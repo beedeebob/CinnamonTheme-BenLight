@@ -1478,7 +1478,7 @@ windowcontrols button {
     min-height: 16px;
     min-width: 16px;
     background-image: none;
-    background-color: #d2d2d2;
+    background-color: #bcbcbc;
     border: none;
     border-radius: 4px;
     box-shadow: none;
@@ -1486,7 +1486,7 @@ windowcontrols button {
     -gtk-icon-shadow: none;
     transition: background-color 150ms ease-in-out, color 150ms ease-in-out; }
     windowcontrols button.close:backdrop, windowcontrols button.close:active:backdrop, windowcontrols button.close:checked:backdrop, windowcontrols button.maximize:backdrop, windowcontrols button.maximize:active:backdrop, windowcontrols button.maximize:checked:backdrop, windowcontrols button.minimize:backdrop, windowcontrols button.minimize:active:backdrop, windowcontrols button.minimize:checked:backdrop {
-      background-color: #e2e2e2;
+      background-color: #d0d0d0;
       color: #9a9a9a;
       -gtk-icon-shadow: none; }
     windowcontrols button.close:hover, windowcontrols button.close:active:hover, windowcontrols button.close:checked:hover, windowcontrols button.close:backdrop:hover {

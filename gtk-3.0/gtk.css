@@ -3381,12 +3381,12 @@ button.titlebutton {
     padding: 4px;
     min-width: 16px;
     min-height: 16px;
-    background-color: #d2d2d2;
+    background-color: #bcbcbc;
     color: #555555;
     -gtk-icon-shadow: none;
     transition: background-color 150ms ease-in-out, color 150ms ease-in-out; }
     button.titlebutton.close:backdrop, button.titlebutton.maximize:backdrop, button.titlebutton.minimize:backdrop {
-      background-color: #e2e2e2;
+      background-color: #d0d0d0;
       color: #9a9a9a;
       -gtk-icon-shadow: none; }
     button.titlebutton.close:hover, button.titlebutton.close:backdrop:hover {
