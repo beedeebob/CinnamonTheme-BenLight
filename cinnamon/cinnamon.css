@@ -1891,14 +1891,11 @@ On-Screen Keyboard (>= Cinnamon 6.6)
     border-right-width: 1px;
 }
 
-.appmenu-sidebar .appmenu-system-button-lock:hover {
-  background-color: #444444;
-  color: white;
-}
-
-.appmenu-sidebar .appmenu-system-button-logout:hover {
-  background-color: #444444;
-  color: white;
+.appmenu-sidebar .appmenu-system-button-lock:hover,
+.appmenu-sidebar .appmenu-system-button-logout:hover,
+.appmenu-sidebar .appmenu-system-button-shutdown:hover {
+  background-color: #c0c0c0;
+  border-radius: 4px;
 }
 
 .appmenu-application-button-label:ltr {
@@ -1933,22 +1930,13 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 
 .appmenu-system-button {
   padding: 8px;
-  border-radius: 9999px;
+  border-radius: 4px;
 }
 
-.appmenu-system-button-lock:hover {
-  background-color: #444444;
-  color: white;
-}
-
-.appmenu-system-button-logout:hover {
-  background-color: #444444;
-  color: white;
-}
-
+.appmenu-system-button-lock:hover,
+.appmenu-system-button-logout:hover,
 .appmenu-system-button-shutdown:hover {
-  background-color: #c21616;
-  color: white;
+  background-color: #dadada;
 }
 
 .appmenu-application-button {
