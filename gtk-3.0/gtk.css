@@ -1318,7 +1318,7 @@ searchbar > revealer > box {
 .titlebar:not(headerbar),
 headerbar {
   padding: 0 7px;
-  min-height: 42px;
+  min-height: 48px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #d0d0d0;
@@ -1465,7 +1465,7 @@ headerbar {
     border-radius: 0; }
   .default-decoration.titlebar:not(headerbar),
   headerbar.default-decoration {
-    min-height: 28px;
+    min-height: 34px;
     padding: 0 6px;
     border-bottom-width: 0;
     background-image: linear-gradient(to bottom, #ffffff, #f0f0f0); }
@@ -3377,10 +3377,21 @@ button.titlebutton {
     background-position: center;
     background-repeat: no-repeat;
     border-width: 0;
+    border-radius: 6px;
+    padding: 4px;
+    min-width: 16px;
+    min-height: 16px;
     color: #8a8a8a;
-    -gtk-icon-shadow: 0 1px white; }
-    button.titlebutton.close:hover, button.titlebutton.maximize:hover, button.titlebutton.minimize:hover {
-      color: #707070; }
+    -gtk-icon-shadow: 0 1px white;
+    transition: background-color 150ms ease-in-out, color 150ms ease-in-out; }
+    button.titlebutton.close:hover {
+      background-color: #e05252;
+      color: #ffffff;
+      -gtk-icon-shadow: none; }
+    button.titlebutton.maximize:hover, button.titlebutton.minimize:hover {
+      background-color: #5aaa9a;
+      color: #ffffff;
+      -gtk-icon-shadow: none; }
     button.titlebutton.close:backdrop, button.titlebutton.maximize:backdrop, button.titlebutton.minimize:backdrop {
       color: #a3a3a3;
       -gtk-icon-shadow: none; }

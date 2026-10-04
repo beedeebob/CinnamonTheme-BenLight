@@ -1472,20 +1472,28 @@ windowcontrols button {
   border-width: 0;
   box-shadow: none;
   text-shadow: none; }
-  windowcontrols button.close, windowcontrols button.close:hover, windowcontrols button.close:active, windowcontrols button.close:checked, windowcontrols button.maximize, windowcontrols button.maximize:hover, windowcontrols button.maximize:active, windowcontrols button.maximize:checked, windowcontrols button.minimize, windowcontrols button.minimize:hover, windowcontrols button.minimize:active, windowcontrols button.minimize:checked {
-    padding: 8px 3px 8px 3px;
+  windowcontrols button.close, windowcontrols button.close:active, windowcontrols button.close:checked, windowcontrols button.maximize, windowcontrols button.maximize:active, windowcontrols button.maximize:checked, windowcontrols button.minimize, windowcontrols button.minimize:active, windowcontrols button.minimize:checked {
+    padding: 4px;
     margin: 0 2px;
-    min-height: 0;
-    min-width: 0;
+    min-height: 16px;
+    min-width: 16px;
     background-image: none;
     background-color: transparent;
     border: none;
+    border-radius: 6px;
     box-shadow: none;
     color: #8a8a8a;
-    -gtk-icon-shadow: 0 1px white; }
-    windowcontrols button.close:hover, windowcontrols button.close:hover:hover, windowcontrols button.close:active:hover, windowcontrols button.close:checked:hover, windowcontrols button.maximize:hover, windowcontrols button.maximize:hover:hover, windowcontrols button.maximize:active:hover, windowcontrols button.maximize:checked:hover, windowcontrols button.minimize:hover, windowcontrols button.minimize:hover:hover, windowcontrols button.minimize:active:hover, windowcontrols button.minimize:checked:hover {
-      color: #707070; }
-    windowcontrols button.close:backdrop, windowcontrols button.close:hover:backdrop, windowcontrols button.close:active:backdrop, windowcontrols button.close:checked:backdrop, windowcontrols button.maximize:backdrop, windowcontrols button.maximize:hover:backdrop, windowcontrols button.maximize:active:backdrop, windowcontrols button.maximize:checked:backdrop, windowcontrols button.minimize:backdrop, windowcontrols button.minimize:hover:backdrop, windowcontrols button.minimize:active:backdrop, windowcontrols button.minimize:checked:backdrop {
+    -gtk-icon-shadow: 0 1px white;
+    transition: background-color 150ms ease-in-out, color 150ms ease-in-out; }
+    windowcontrols button.close:hover, windowcontrols button.close:active:hover, windowcontrols button.close:checked:hover {
+      background-color: #e05252;
+      color: #ffffff;
+      -gtk-icon-shadow: none; }
+    windowcontrols button.maximize:hover, windowcontrols button.maximize:active:hover, windowcontrols button.maximize:checked:hover, windowcontrols button.minimize:hover, windowcontrols button.minimize:active:hover, windowcontrols button.minimize:checked:hover {
+      background-color: #5aaa9a;
+      color: #ffffff;
+      -gtk-icon-shadow: none; }
+    windowcontrols button.close:backdrop, windowcontrols button.close:active:backdrop, windowcontrols button.close:checked:backdrop, windowcontrols button.maximize:backdrop, windowcontrols button.maximize:active:backdrop, windowcontrols button.maximize:checked:backdrop, windowcontrols button.minimize:backdrop, windowcontrols button.minimize:active:backdrop, windowcontrols button.minimize:checked:backdrop {
       color: #a3a3a3;
       -gtk-icon-shadow: none; }
 
@@ -1495,7 +1503,7 @@ windowcontrols button {
 .titlebar:not(headerbar),
 headerbar {
   padding: 0 7px;
-  min-height: 42px;
+  min-height: 48px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #d0d0d0;
@@ -1526,7 +1534,7 @@ headerbar {
     border-radius: 0; }
   .default-decoration.titlebar:not(headerbar),
   headerbar.default-decoration {
-    min-height: 28px;
+    min-height: 34px;
     padding: 0 6px;
     border-bottom-width: 0;
     background-image: linear-gradient(to bottom, #ffffff, #f0f0f0); }
