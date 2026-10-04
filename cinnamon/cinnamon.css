@@ -2141,7 +2141,14 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 }
 
 .window-list-preview {
-    border-image: url("background-assets/bg-1.png") 6;
+    border-image: none;
+    border-width: 0px;
+    border-radius: 10px;
+    background: url("background-assets/noise-texture.png");
+    background-repeat: repeat;
+    background-gradient-direction: radial;
+    background-gradient-start: rgba(255, 255, 255, 0.95);
+    background-gradient-end: rgba(237, 237, 237, 0.95);
     color: rgb(70, 70, 70);
     padding: 6px 12px 12px 12px;
     font-size: 1em;
@@ -2251,9 +2258,16 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 }
 
 .grouped-window-list-thumbnail-menu {
-    border-image: url("background-assets/bg-1.png") 6;
+    border-image: none;
+    border-width: 0px;
+    border-radius: 10px;
+    background: url("background-assets/noise-texture.png");
+    background-repeat: repeat;
+    background-gradient-direction: radial;
+    background-gradient-start: rgba(255, 255, 255, 0.95);
+    background-gradient-end: rgba(237, 237, 237, 0.95);
     color: rgb(70, 70, 70);
-    padding: 0px;
+    padding: 4px;
     font-size: 0.9em;
     font-weight: bold;
 }
@@ -2261,7 +2275,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 .grouped-window-list-thumbnail-menu .item-box {
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 0px;
+    border-radius: 6px;
     spacing: 4px;
 }
 
@@ -2271,8 +2285,8 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 }
 
 .grouped-window-list-thumbnail-menu .item-box:selected {
-    border-image: url("misc-assets/hover-2.png") 6;
-    color: #fff;
+    background-color: #dadada;
+    border-radius: 6px;
 }
 
 .grouped-window-list-thumbnail-menu .thumbnail {
